@@ -1,0 +1,130 @@
+/* Springtime in Michigan - Homework Two: Advanced Selectors and Display */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  margin: 0;
+  color: #222222;
+  background-color: #fdfbf5;
+}
+
+/* HW2 step 2: "Skip to Main Content" link */
+.skip-link {
+  display: block;
+  padding: 8px 16px;
+  background-color: #fff8e1;
+  color: #143326;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  outline: 3px solid #1a5c8a;
+}
+
+header {
+  background-color: #1f4d3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* HW2 step 4: nav uses inline-block with a width of about 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #143326;
+  padding: 10px 0;
+}
+
+/* HW2 step 5: descendant selector - only the image inside the nav */
+nav img {
+  width: 10%;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+main {
+  background-color: #fdfbf5;
+  font-size: 1.1em;
+  padding: 20px 40px;
+}
+
+main a {
+  color: #1a5c8a;
+}
+
+main img {
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  font-size: 0.85em;
+  padding: 10px 40px;
+}
+
+footer a {
+  color: #9fd3ff;
+}
+
+/* HW2 step 3: the old li styling is commented out
+li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+*/
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: #fff8e1;
+  margin: 15px 0 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* HW2 steps 6 and 8: two-column grid, each column about 40% */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* HW2 step 7: descendant selector - only images inside .grid */
+.grid img {
+  width: 100%;
+}
+
+/* HW2 step 9: flex layout for the parks page */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
